@@ -1,0 +1,204 @@
+<ion-header class="ion-no-borde">         <!--Quitar la linea de separacion entre el header y el content-->
+
+  <ion-toolbar>                 <!--Comienzo de navbar para los botones "Hamburguesa & campana"-->
+    <!--Crear icono de menu-->
+    <ion-buttons slot="start">            <!--Botton de menu hamburguesa(Los cuadritos)-->
+      <ion-button>
+        <ion-icon name="apps"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">              <!--Boton de notificaciones (Campanita)-->
+      <ion-button class="borde" fill="solid" color="light">
+        <ion-icon color="primary" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <ion-item lines="none">       <!--Comienzo para la tarjeta de presentacion-->
+    <ion-avatar slot="start">   <!--El slot es para ubicar entre izquierda o end para ubicar derecha de la pagina-->
+      <img src="../../assets/icon/lavar.jpg" alt="">
+    </ion-avatar>
+    <ion-label>
+      <p>Fullstak</p>
+      <h3>Brian Manriquez</h3>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<!--Aqui empieza el cuerpo de la aplicacion movil-->
+<ion-content [fullscreen]="true"> 
+  <div class="slides ion-magin-bottom">
+    <!--Crear el component hom.page.ts-->
+    <ion-slides [options]="slideOptions">             <!--Aqui empieza la codicacion de las "cards"-->
+      <!--Aqui empieza la card individual-->
+      <ion-slide>                                     
+        <ion-card>
+          <!--Crear la estrucutra de las cards y este debe de tener header y content-->
+          <ion-card-header class="ion-card-content">  
+            <img  class="files" src="../../assets/icon/lavadora.jpg" alt="">
+            <br>
+            <div class="opciones">
+            <label  for="productos">Agregar:</label>
+              <select class="opciones-secciones" name="productos" id="productos">            <!--Menu de opciones-->
+                <option value="suavizante">Suavizante</option>
+                <option value="Detergente">Detergente</option>
+                <option value="Toallas">Toallas para secadora</option>
+                <option value="doblado">Doblado</option>
+              </select>
+            </div>
+            <ion-button class="ion-button-led" color="danger">Prender</ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title class="ion-margin-bottom">Maquina #1</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">2/20Hr</ion-card-subtitle>
+            <!--Proceso -->
+            <ion-progress-bar value="0.2" color="secondary"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+
+      <!--Crear otra tarjeta-->
+      <ion-slide>
+        <ion-card>
+          <!--Crear la estrucutra de las cards y este debe de tener header y content-->
+          <ion-card-header class="ion-card-content">    
+            <img  class="files" src="../../assets/icon/lavadora.jpg" alt="">
+            <br>
+            <div class="opciones">
+            <label  for="productos">Agregar:</label>
+              <select class="opciones-secciones" name="productos" id="productos">            <!--Menu de opciones-->
+                <option value="suavizante">Suavizante</option>
+                <option value="Detergente">Detergente</option>
+                <option value="Toallas">Toallas para secadora</option>
+                <option value="doblado">Doblado</option>
+              </select>
+            </div>
+            <ion-button class="ion-button-led" color="danger">Prender</ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title class="ion-margin-bottom">Maquina #2</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/20Hr</ion-card-subtitle>
+            <!--Proceso -->
+            <ion-progress-bar value="0.5" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <!--Crear otra tarjeta-->
+      <ion-slide>
+        <ion-card>
+          <!--Crear la estrucutra de las cards y este debe de tener header y content-->
+          <ion-card-header class="ion-card-content">    
+            <img  class="files" src="../../assets/icon/lavadora.jpg" alt="">
+            <br>
+            <div class="opciones">
+            <label  for="productos">Agregar:</label>
+              <select class="opciones-secciones" name="productos" id="productos">            <!--Menu de opciones-->
+                <option value="suavizante">Suavizante</option>
+                <option value="Detergente">Detergente</option>
+                <option value="Toallas">Toallas para secadora</option>
+                <option value="doblado">Doblado</option>
+              </select>
+            </div>
+            <ion-button class="ion-button-led" color="danger">Prender</ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title class="ion-margin-bottom">Maquina #3</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/20Hr</ion-card-subtitle>
+            <!--Proceso -->
+            <ion-progress-bar value="0.5" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <!--Crear otra tarjeta-->
+      <ion-slide>
+        <ion-card>
+          <!--Crear la estrucutra de las cards y este debe de tener header y content-->
+          <ion-card-header class="ion-card-content">    
+            <img  class="files" src="../../assets/icon/lavadora.jpg" alt="">
+            <br>
+            <div class="opciones">
+            <label  for="productos">Agregar:</label>
+              <select class="opciones-secciones" name="productos" id="productos">            <!--Menu de opciones-->
+                <option value="suavizante">Suavizante</option>
+                <option value="Detergente">Detergente</option>
+                <option value="Toallas">Toallas para secadora</option>
+                <option value="doblado">Doblado</option>
+              </select>
+            </div>
+            <ion-button class="ion-button-led" color="danger">Prender</ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title class="ion-margin-bottom">Maquina #4</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/20Hr</ion-card-subtitle>
+            <!--Proceso -->
+            <ion-progress-bar value="0.5" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <!--Crear otra tarjeta-->
+      <ion-slide>
+        <ion-card>
+          <!--Crear la estrucutra de las cards y este debe de tener header y content-->
+          <ion-card-header class="ion-card-content">    
+            <img  class="files" src="../../assets/icon/lavadora.jpg" alt="">
+            <br>
+            <div class="opciones">
+            <label  for="productos">Agregar:</label>
+              <select class="opciones-secciones" name="productos" id="productos">            <!--Menu de opciones-->
+                <option value="suavizante">Suavizante</option>
+                <option value="Detergente">Detergente</option>
+                <option value="Toallas">Toallas para secadora</option>
+                <option value="doblado">Doblado</option>
+              </select>
+            </div>
+            <ion-button class="ion-button-led" color="danger">Prender</ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title class="ion-margin-bottom">Maquina #5</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/20Hr</ion-card-subtitle>
+            <!--Proceso -->
+            <ion-progress-bar value="0.5" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <!--Crear otra tarjeta-->
+      <ion-slide>
+        <ion-card>
+          <!--Crear la estrucutra de las cards y este debe de tener header y content-->
+          <ion-card-header class="ion-card-content">    
+            <img  class="files" src="../../assets/icon/lavadora.jpg" alt="">
+            <br>
+            <div class="opciones">
+            <label  for="productos">Agregar:</label>
+              <select class="opciones-secciones" name="productos" id="productos">            <!--Menu de opciones-->
+                <option value="suavizante">Suavizante</option>
+                <option value="Detergente">Detergente</option>
+                <option value="Toallas">Toallas para secadora</option>
+                <option value="doblado">Doblado</option>
+              </select>
+            </div>
+            <ion-button class="ion-button-led" color="danger">Prender</ion-button>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title class="ion-margin-bottom">Maquina #6</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/20Hr</ion-card-subtitle>
+            <!--Proceso -->
+            <ion-progress-bar value="0.5" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides> <!--Aqui terminar todo el contenido de los cards-->
+  </div>
+  
+
+
+
+  <!--Agregar Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> 
+</ion-content>

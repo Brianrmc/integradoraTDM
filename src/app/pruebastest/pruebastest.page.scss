@@ -1,0 +1,42 @@
+ion-content{
+  --background:linear-gradient(90deg, rgba(43,90,148,1)0%,rgba(45,112,229,1)35%,rgba(45,112,229,1)100%);
+  .slide{
+    background: #f1f5f8;
+    padding: 4px, 10px, 20px, 10px;
+    border-radius: 0 0 28px 28px;
+  }
+
+}
+.ion-card-content{                          /*Editar los estilos dentro de la card*/
+background: lightblue;
+width: 300px;
+height: 300px;
+  .opciones{                              /*Estilos del menu de opciones*/
+    background: lightcyan;
+    width: 100%;
+    padding: 0;
+    margin-left: -18px;
+    margin-top: 15px;
+    font-size: 15px;
+    .opciones-secciones{
+      background-color: #f1f5f8;
+     margin-left: 10px;
+    }
+  }
+  .ion-button-led{
+    height: 50px;
+    width: 60px;
+    font-size: 10px;
+    margin-top: -450px;
+    margin-left: -200px;
+    --border-radius: 45px;
+  }
+}
+
+/*Modificar los estilos de la imagen de la lavadora*/
+.files{    
+  align-items: center;                      
+  width: 150px;
+  height: 200px;
+  margin-left: 50px;
+}
